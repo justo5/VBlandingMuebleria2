@@ -1,0 +1,82 @@
+section {
+  background: var(--surface-dark);
+  padding: clamp(48px, 10vw, 96px) 0;
+}
+
+.cm-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.cm-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.cm-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--maroon);
+  margin-bottom: 14px;
+}
+
+.cm-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 6vw, 40px);
+  line-height: 1.12;
+  margin: 0;
+}
+
+.cm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.cm-card {
+  background: #fff;
+  border: 1px solid rgba(var(--black-rgb), .12);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.cm-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: var(--black);
+}
+
+.cm-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cm-list-item {
+  display: flex;
+  gap: 11px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgba(var(--black-rgb), .82);
+}
+
+.cm-list-mark {
+  color: var(--caramel);
+}
+
+.cm-closing {
+  text-align: center;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: rgba(var(--black-rgb), .75);
+  margin: 36px auto 0;
+  max-width: 680px;
+}

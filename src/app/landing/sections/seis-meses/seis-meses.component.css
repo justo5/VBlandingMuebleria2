@@ -1,0 +1,133 @@
+section {
+  background: var(--surface-dark);
+  padding: clamp(48px, 10vw, 96px) 0;
+}
+
+.sm-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.sm-header {
+  max-width: 680px;
+  margin-bottom: 52px;
+}
+
+.sm-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--maroon);
+  margin-bottom: 14px;
+}
+
+.sm-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 6vw, 40px);
+  line-height: 1.12;
+  margin: 0 0 16px;
+}
+
+.sm-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(var(--black-rgb), .75);
+  margin: 0;
+}
+
+.sm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.sm-card {
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.sm-card-highlight {
+  background: var(--caramel);
+  color: var(--white);
+}
+
+.sm-card-plain {
+  background: #fff;
+  border: 1px solid rgba(var(--black-rgb), .12);
+}
+
+.sm-card-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.sm-card-highlight .sm-card-label {
+  color: rgba(var(--white-rgb), .75);
+}
+
+.sm-card-plain .sm-card-label {
+  color: rgba(var(--black-rgb), .55);
+}
+
+.sm-card-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(19px, 3.5vw, 24px);
+  margin: 0 0 16px;
+}
+
+.sm-card-highlight .sm-card-title {
+  color: var(--white);
+}
+
+.sm-card-plain .sm-card-title {
+  color: var(--black);
+}
+
+.sm-list {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sm-card-plain .sm-list {
+  margin: 0;
+}
+
+.sm-list-item {
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+.sm-card-highlight .sm-list-item {
+  color: var(--white);
+}
+
+.sm-card-plain .sm-list-item {
+  color: rgba(var(--black-rgb), .68);
+}
+
+.sm-badge {
+  display: inline-block;
+  background: rgba(var(--white-rgb), 0.14);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+
+.sm-closing {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(19px, 3.5vw, 24px);
+  text-align: center;
+  margin: 48px auto 0;
+  max-width: 620px;
+}

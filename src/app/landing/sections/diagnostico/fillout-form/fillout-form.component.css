@@ -1,0 +1,117 @@
+.fillout-embed {
+  width: 100%;
+  height: 500px;
+}
+
+.test-placeholder {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #fff;
+  border: 2px dashed rgba(var(--caramel-rgb),.4);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.test-placeholder p {
+  margin: 0;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+.test-btn {
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: .9rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+}
+
+.test-btn:hover {
+  background: var(--maroon);
+  transform: translateY(-1px);
+}
+
+.thanks-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(var(--black-rgb),.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.5rem;
+  animation: thanksFade .25s ease-out;
+}
+
+.thanks-card {
+  position: relative;
+  background: var(--black);
+  border: 1px solid rgba(var(--white-rgb),.15);
+  border-top: 3px solid var(--caramel);
+  border-radius: 18px;
+  padding: 3rem 2.5rem 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,.5);
+  animation: thanksPop .3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.thanks-close {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: rgba(var(--white-rgb),.5);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: .25rem .5rem;
+  transition: color .2s;
+}
+.thanks-close:hover { color: var(--white); }
+
+.thanks-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.thanks-card h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 .8rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.thanks-card p {
+  font-size: .92rem;
+  color: rgba(var(--white-rgb),.6);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@keyframes thanksFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes thanksPop {
+  from { opacity: 0; transform: scale(.92); }
+  to { opacity: 1; transform: scale(1); }
+}

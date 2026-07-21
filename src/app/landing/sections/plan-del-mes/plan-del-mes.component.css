@@ -1,0 +1,78 @@
+section {
+  background: var(--surface-light);
+  padding: clamp(48px, 10vw, 96px) 0;
+}
+
+.pdm-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.pdm-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 52px;
+}
+
+.pdm-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--maroon);
+  margin-bottom: 14px;
+}
+
+.pdm-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 6vw, 40px);
+  line-height: 1.12;
+  margin: 0 0 14px;
+}
+
+.pdm-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(var(--black-rgb), .75);
+  margin: 0;
+}
+
+.pdm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pdm-card {
+  background: #fff;
+  border: 1px solid rgba(var(--caramel-rgb), .2);
+  border-radius: 14px;
+  padding: 26px;
+}
+
+.pdm-card-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(18px, 3.5vw, 23px);
+  margin: 0 0 10px;
+  color: var(--caramel);
+}
+
+.pdm-card-text {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: rgba(var(--black-rgb), .68);
+  margin: 0;
+}
+
+.pdm-closing {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(19px, 4vw, 26px);
+  text-align: center;
+  margin: 48px 0 0;
+}
+
+.pdm-closing-accent {
+  color: var(--caramel);
+}

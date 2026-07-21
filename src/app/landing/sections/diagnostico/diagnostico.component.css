@@ -1,0 +1,17 @@
+section {
+  background: var(--surface-dark);
+  padding: clamp(48px, 10vw, 96px) 0 100px;
+}
+
+.dg-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.dg-card {
+  background: #fff;
+  border: 1px solid rgba(var(--caramel-rgb), .2);
+  border-radius: 14px;
+  padding: 28px;
+}

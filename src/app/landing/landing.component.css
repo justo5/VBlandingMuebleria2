@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.landing-root {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--white);
+}

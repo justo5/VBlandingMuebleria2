@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#F8F4EC;color:#211E17;font-family:'Figtree',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:#3C6B4F;text-decoration:none}
+  a:hover{color:#305840}
+  ::selection{background:#D7E2D3;color:#211E17}
+  input,select,textarea,button{font-family:inherit}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="width:100%;overflow-x:hidden;background:#F8F4EC">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(248,244,236,0.82);backdrop-filter:blur(12px);border-bottom:1px solid #E3D9C6">
+    <div style="max-width:1120px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;color:#211E17">
+        <span style="width:26px;height:26px;border-radius:7px;background:#3C6B4F;display:inline-flex;align-items:center;justify-content:center;color:#F8F4EC;font-weight:700;font-size:14px">V</span>
+        <span style="font-weight:700;letter-spacing:0.14em;font-size:14px">VAMOS BIEN</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:22px">
+        <span style="font-size:13.5px;color:#6B6353;letter-spacing:0.02em">Socios estratégicos en crecimiento digital</span>
+        <a href="#diagnostico" style="background:#3C6B4F;color:#F8F4EC;font-weight:600;font-size:14px;padding:11px 20px;border-radius:7px" style-hover="background:#305840">Quiero saber si califico</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" style="position:relative;padding:76px 0 84px">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+      <div data-reveal>
+        <div style="display:inline-flex;align-items:center;gap:9px;background:#E9EFE8;border:1px solid #CBDBC7;color:#3C6B4F;font-weight:600;font-size:13px;padding:7px 14px;border-radius:100px;margin-bottom:26px">
+          <span style="width:7px;height:7px;border-radius:50%;background:#3C6B4F"></span>
+          Primeros 30 días de honorarios 100% bonificados
+        </div>
+        <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:52px;line-height:1.08;letter-spacing:-0.01em;margin:0 0 22px">Primero ponemos en marcha tu sistema de captación.<br><span style="color:#3C6B4F">Después</span> empezás a pagar nuestros honorarios.</h1>
+        <p style="font-size:18px;line-height:1.6;color:#4A4437;margin:0 0 30px;max-width:520px">Durante el primer mes analizamos tu negocio, definimos un foco comercial, creamos tu Plan del Mes, ponemos en marcha las campañas y comenzamos a optimizar. No abonás honorarios por adelantado: tu primer pago se realiza recién al comenzar el segundo mes.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px">
+          <a href="#diagnostico" style="background:#3C6B4F;color:#F8F4EC;font-weight:600;font-size:15.5px;padding:15px 26px;border-radius:8px" style-hover="background:#305840">Quiero saber si mi negocio califica</a>
+          <a href="#diagnostico" style="background:transparent;color:#211E17;font-weight:600;font-size:15.5px;padding:15px 26px;border-radius:8px;border:1.5px solid #C9BFA9" style-hover="border-color:#211E17">Hablar con un asesor · 15 min</a>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#FDFBF6;border:1px solid #E3D9C6;border-radius:10px;padding:14px 16px;max-width:520px">
+          <span style="flex:none;margin-top:2px;width:6px;height:6px;border-radius:50%;background:#3C6B4F"></span>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:#6B6353">La inversión publicitaria se abona desde el primer día directamente a Meta. No es una prueba rápida ni una promesa mágica: es el comienzo de un proceso profesional de crecimiento.</p>
+        </div>
+      </div>
+      <div data-reveal style="position:relative">
+        <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid #E3D9C6;background:repeating-linear-gradient(135deg,#EFE7D7,#EFE7D7 14px,#EAE0CD 14px,#EAE0CD 28px)">
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+            <span style="width:66px;height:66px;border-radius:50%;background:rgba(60,107,79,0.95);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(33,30,23,0.18)">
+              <span style="display:block;width:0;height:0;border-left:18px solid #F8F4EC;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px"></span>
+            </span>
+            <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#6B6353;letter-spacing:0.04em">[ VIDEO CORTO · 45–60s ]</span>
+          </div>
+        </div>
+        <div style="position:absolute;-webkit-backdrop-filter:blur(4px);bottom:-18px;left:-18px;background:#211E17;color:#F8F4EC;border-radius:12px;padding:16px 18px;box-shadow:0 12px 30px rgba(33,30,23,0.22);max-width:210px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;line-height:1;margin-bottom:4px">USD 0</div>
+          <div style="font-size:12px;line-height:1.4;color:#C9C1B0">en honorarios durante los primeros 30 días</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TESTIMONIALS (placeholders) -->
+  <section style="background:#211E17;color:#F8F4EC;padding:70px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:34px">
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:30px;margin:0;color:#F8F4EC">Negocios que ya trabajan con foco</h2>
+        <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#8C8674">[ reemplazar por testimonios reales ]</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:26px">
+          <p style="font-family:'Newsreader',serif;font-size:19px;line-height:1.5;color:#EDE7D8;margin:0 0 22px">“Dejamos de improvisar. Ahora sabemos qué medir y cuándo decidir.”</p>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(135deg,#3A342A,#3A342A 6px,#332E25 6px,#332E25 12px)"></span>
+            <div><div style="font-weight:600;font-size:14px">Nombre Apellido</div><div style="font-size:12.5px;color:#8C8674">Rubro · Ciudad</div></div>
+          </div>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:26px">
+          <p style="font-family:'Newsreader',serif;font-size:19px;line-height:1.5;color:#EDE7D8;margin:0 0 22px">“El primer mes bonificado nos dio la confianza para empezar sin riesgo.”</p>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(135deg,#3A342A,#3A342A 6px,#332E25 6px,#332E25 12px)"></span>
+            <div><div style="font-weight:600;font-size:14px">Nombre Apellido</div><div style="font-size:12.5px;color:#8C8674">Rubro · Ciudad</div></div>
+          </div>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:26px">
+          <p style="font-family:'Newsreader',serif;font-size:19px;line-height:1.5;color:#EDE7D8;margin:0 0 22px">“No gestionan anuncios y ya. Piensan el negocio con nosotros.”</p>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:40px;height:40px;border-radius:50%;background:repeating-linear-gradient(135deg,#3A342A,#3A342A 6px,#332E25 6px,#332E25 12px)"></span>
+            <div><div style="font-weight:600;font-size:14px">Nombre Apellido</div><div style="font-size:12.5px;color:#8C8674">Rubro · Ciudad</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2 PROBLEMA -->
+  <section style="padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="max-width:720px;margin-bottom:48px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">EL PROBLEMA</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0 0 18px">El problema muchas veces no es Meta Ads</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:48px">
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;padding:24px;font-size:17px;line-height:1.5;color:#4A4437">¿Invertís en publicidad sin saber qué producto priorizar?</div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;padding:24px;font-size:17px;line-height:1.5;color:#4A4437">¿Probás anuncios y tácticas sin una dirección clara?</div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;padding:24px;font-size:17px;line-height:1.5;color:#4A4437">¿Recibís consultas, pero pocas terminan convirtiéndose en ventas?</div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;padding:24px;font-size:17px;line-height:1.5;color:#4A4437">¿Cambiás la estrategia cada vez que una semana no sale como esperabas?</div>
+      </div>
+      <div data-reveal style="display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center">
+        <div>
+          <p style="font-size:19px;line-height:1.55;color:#211E17;margin:0 0 8px">El problema no siempre es la plataforma.</p>
+          <p style="font-size:19px;line-height:1.55;color:#211E17;margin:0">El problema es hacer campañas sin sistema.</p>
+        </div>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px">
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin un foco comercial</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin una oferta clara</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin un plan mensual</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin métricas definidas</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin analizar la calidad de las consultas</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin revisar lo que pasa después del clic</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;font-size:15px;color:#4A4437"><span style="color:#B84A3E;font-weight:700">✕</span>Sin coordinación entre agencia y negocio</li>
+        </ul>
+      </div>
+      <p data-reveal style="font-family:'Newsreader',serif;font-size:28px;line-height:1.3;text-align:center;margin:56px auto 0;max-width:640px">Tus campañas no necesitan más improvisación.<br>Necesitan un plan.</p>
+    </div>
+  </section>
+
+  <!-- S3 CAMBIO DE PARADIGMA -->
+  <section style="background:#EFE7D7;padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">EL CAMBIO DE PARADIGMA</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0">Una forma diferente de trabajar con Meta Ads</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div data-reveal style="background:#F5EEDF;border:1px solid #DDD0B8;border-radius:16px;padding:32px">
+          <div style="font-weight:600;font-size:14px;letter-spacing:0.06em;color:#8C7B5C;text-transform:uppercase;margin-bottom:22px">Gestión tradicional</div>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>Pagás antes de conocer cómo trabaja la agencia.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>Se activan campañas rápidamente.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>Se ejecutan pedidos aislados.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>Se intenta vender todo al mismo tiempo.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>Se muestran principalmente métricas técnicas.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#5A5344"><span style="color:#B84A3E">✕</span>El trabajo se limita a “gestionar anuncios”.</li>
+          </ul>
+        </div>
+        <div data-reveal style="background:#3C6B4F;border:1px solid #305840;border-radius:16px;padding:32px;color:#F8F4EC">
+          <div style="font-weight:600;font-size:14px;letter-spacing:0.06em;color:#BFD6C2;text-transform:uppercase;margin-bottom:22px">Vamos Bien</div>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Primero conocemos tu negocio.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Identificamos la oportunidad comercial.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Elegimos un foco principal y creamos un Plan del Mes.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Ponemos en marcha las campañas con dirección clara.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Analizamos la calidad de las oportunidades generadas.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Revisamos cómo se atienden las consultas.</li>
+            <li style="display:flex;gap:12px;font-size:15.5px;line-height:1.45;color:#EAF1E9"><span style="color:#BFE0C4">✓</span>Trabajamos como socios estratégicos digitales.</li>
+          </ul>
+        </div>
+      </div>
+      <p data-reveal style="font-family:'Newsreader',serif;font-size:28px;text-align:center;margin:52px 0 0">No gestionamos campañas. <span style="color:#3C6B4F">Construimos crecimiento.</span></p>
+    </div>
+  </section>
+
+  <!-- S4 LA OFERTA -->
+  <section id="oferta" style="padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:0.95fr 1.05fr;gap:56px;align-items:center">
+      <div data-reveal>
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">LA OFERTA</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.1;margin:0 0 20px">Primer mes de honorarios <span style="color:#3C6B4F">100% bonificado</span></h2>
+        <p style="font-size:17.5px;line-height:1.6;color:#4A4437;margin:0 0 20px">Durante los primeros 30 días trabajamos normalmente, pero no abonás nuestros honorarios. No es un mes sin trabajo: es un mes completo de implementación, estrategia y ejecución profesional.</p>
+        <p style="font-size:17.5px;line-height:1.6;color:#211E17;margin:0 0 26px;font-weight:500">Tu primer pago se realiza recién al comenzar el segundo mes.</p>
+        <div style="display:flex;gap:12px;align-items:flex-start;background:#FDFBF6;border:1px solid #E3D9C6;border-left:3px solid #3C6B4F;border-radius:8px;padding:14px 16px;margin-bottom:26px">
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:#6B6353"><strong style="color:#4A4437">Nota:</strong> la inversión publicitaria se paga desde el primer día directamente a Meta y no está incluida en la bonificación.</p>
+        </div>
+        <a href="#diagnostico" style="display:inline-block;background:#3C6B4F;color:#F8F4EC;font-weight:600;font-size:15.5px;padding:15px 26px;border-radius:8px" style-hover="background:#305840">Completar el diagnóstico</a>
+      </div>
+      <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:16px;padding:32px">
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.1em;color:#8C7B5C;text-transform:uppercase;margin-bottom:18px">Incluido en esos 30 días</div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0">
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Analizamos tu negocio</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Definimos un foco comercial</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Creamos tu Plan del Mes</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Configuramos o revisamos la cuenta publicitaria</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Ponemos en marcha las campañas</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Comenzamos a medir y optimizar</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #EBE2D1;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Analizamos la calidad de las consultas</li>
+          <li style="display:flex;gap:12px;align-items:center;padding:13px 0;font-size:15.5px;color:#3A3529"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:12px">✓</span>Revisamos el proceso comercial por WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 BLUEPRINT -->
+  <section style="background:#211E17;color:#F8F4EC;padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="max-width:680px;margin-bottom:56px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#8FB79A;margin-bottom:14px">LOS PRIMEROS 30 DÍAS</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0;color:#F8F4EC">El Blueprint de Implementación</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">01</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Diagnóstico del negocio</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0">Analizamos qué vendés, a quién, con qué margen y cómo funciona tu proceso comercial. No comenzamos por los anuncios: comenzamos por entender el negocio.</p>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">02</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Definición del foco comercial</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0">Elegimos un producto, servicio, segmento u oportunidad principal para trabajar durante el mes. No intentamos vender todo al mismo tiempo.</p>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">03</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Creación del Plan del Mes</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0 0 14px">Definimos objetivo, producto prioritario, mensajes, audiencias, presupuesto, responsabilidades y métricas.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:7px">
+            <span style="font-size:12px;background:#332E25;border:1px solid #423B30;color:#CFC7B5;padding:4px 10px;border-radius:100px">Objetivo</span>
+            <span style="font-size:12px;background:#332E25;border:1px solid #423B30;color:#CFC7B5;padding:4px 10px;border-radius:100px">Mensajes</span>
+            <span style="font-size:12px;background:#332E25;border:1px solid #423B30;color:#CFC7B5;padding:4px 10px;border-radius:100px">Audiencias</span>
+            <span style="font-size:12px;background:#332E25;border:1px solid #423B30;color:#CFC7B5;padding:4px 10px;border-radius:100px">Presupuesto</span>
+            <span style="font-size:12px;background:#332E25;border:1px solid #423B30;color:#CFC7B5;padding:4px 10px;border-radius:100px">Métricas</span>
+          </div>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">04</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Puesta en marcha de las campañas</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0">Configuramos o revisamos la cuenta y activamos las campañas en Facebook, Instagram y WhatsApp.</p>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">05</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Medición y optimización</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0">Analizamos los primeros datos y ajustamos mensajes, audiencias, creatividades, presupuesto y calidad de las consultas.</p>
+        </div>
+        <div data-reveal style="background:#2A261D;border:1px solid #3A342A;border-radius:14px;padding:28px">
+          <div style="font-family:'Newsreader',serif;font-size:26px;color:#8FB79A;margin-bottom:10px">06</div>
+          <h3 style="font-size:19px;font-weight:600;margin:0 0 10px;color:#F8F4EC">Revisión del proceso comercial</h3>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0">Conseguir consultas no alcanza si después no se convierten. Observamos cómo se atienden las oportunidades por WhatsApp y damos recomendaciones para mejorar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 PLAN DEL MES -->
+  <section style="padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:680px;margin:0 auto 52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">EL PLAN DEL MES</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0 0 14px">Un solo foco. Menos ruido. Mejores decisiones.</h2>
+        <p style="font-size:17px;line-height:1.6;color:#4A4437;margin:0">Todo nuestro trabajo se organiza alrededor del Plan del Mes.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:26px">
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:23px;margin:0 0 10px;color:#3C6B4F">Foco</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Definimos una prioridad comercial para no dispersar presupuesto, atención y energía.</p>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:26px">
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:23px;margin:0 0 10px;color:#3C6B4F">Orden</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Acordamos qué va a hacer Vamos Bien y qué necesita hacer el cliente.</p>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:26px">
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:23px;margin:0 0 10px;color:#3C6B4F">Criterio</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Definimos previamente qué métricas vamos a observar y cuándo tomar decisiones.</p>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:26px">
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:23px;margin:0 0 10px;color:#3C6B4F">Aprendizaje</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Utilizamos los resultados del mes para mejorar el siguiente.</p>
+        </div>
+      </div>
+      <p data-reveal style="font-family:'Newsreader',serif;font-size:26px;text-align:center;margin:48px 0 0">No cambiamos de dirección por ansiedad. <span style="color:#3C6B4F">Decidimos con datos.</span></p>
+    </div>
+  </section>
+
+  <!-- S7 SEIS MESES -->
+  <section style="background:#EFE7D7;padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="max-width:680px;margin-bottom:52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">POR QUÉ SEIS MESES</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0 0 16px">Una campaña no se construye con una sola decisión</h2>
+        <p style="font-size:17px;line-height:1.6;color:#4A4437;margin:0">El crecimiento real necesita tiempo, información, consistencia y trabajo en equipo. Por eso comenzamos con un proceso inicial de seis meses.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div data-reveal style="background:#3C6B4F;color:#F8F4EC;border-radius:16px;padding:30px">
+          <div style="font-size:12.5px;font-weight:600;letter-spacing:0.1em;color:#BFD6C2;margin-bottom:6px">MES 1</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:24px;margin:0 0 16px;color:#F8F4EC">Implementación</h3>
+          <ul style="list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li style="font-size:14.5px;line-height:1.4;color:#E4EDE3">Diagnóstico y definición del foco</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#E4EDE3">Plan del Mes y configuración</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#E4EDE3">Activación de campañas y primeros datos</li>
+          </ul>
+          <span style="display:inline-block;background:rgba(248,244,236,0.14);color:#F8F4EC;font-weight:600;font-size:12.5px;padding:6px 12px;border-radius:100px">Honorarios 100% bonificados</span>
+        </div>
+        <div data-reveal style="background:#F5EEDF;border:1px solid #DDD0B8;border-radius:16px;padding:30px">
+          <div style="font-size:12.5px;font-weight:600;letter-spacing:0.1em;color:#8C7B5C;margin-bottom:6px">MESES 2 Y 3</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:24px;margin:0 0 16px;color:#211E17">Validación</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Prueba de mensajes y creatividades</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Análisis de audiencias</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Mejora de la calidad de las consultas</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Ajustes de presupuesto</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Optimización del proceso comercial</li>
+          </ul>
+        </div>
+        <div data-reveal style="background:#F5EEDF;border:1px solid #DDD0B8;border-radius:16px;padding:30px">
+          <div style="font-size:12.5px;font-weight:600;letter-spacing:0.1em;color:#8C7B5C;margin-bottom:6px">MESES 4 A 6</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:24px;margin:0 0 16px;color:#211E17">Crecimiento</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Consolidación de aprendizajes</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Mejora de costos y conversión</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Identificación de nuevas oportunidades</li>
+            <li style="font-size:14.5px;line-height:1.4;color:#5A5344">Decisiones de inversión y escala</li>
+          </ul>
+        </div>
+      </div>
+      <p data-reveal style="font-family:'Newsreader',serif;font-size:24px;text-align:center;margin:48px auto 0;max-width:620px">El primer mes instala el sistema. Los siguientes meses lo hacen aprender y mejorar.</p>
+    </div>
+  </section>
+
+  <!-- S8 INVERSION -->
+  <section id="inversion" style="padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">INVERSIÓN</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0">Claridad total desde el primer día</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px">
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:16px;padding:32px">
+          <div style="font-size:12.5px;font-weight:600;letter-spacing:0.1em;color:#8C7B5C;text-transform:uppercase;margin-bottom:16px">Primer mes</div>
+          <div style="font-family:'Newsreader',serif;font-size:38px;line-height:1;color:#3C6B4F;margin-bottom:6px">100% bonificado</div>
+          <p style="font-size:15px;line-height:1.55;color:#5A5344;margin:0 0 18px">Honorarios de Vamos Bien. No abonás honorarios por adelantado.</p>
+          <div style="border-top:1px solid #EBE2D1;padding-top:16px">
+            <div style="font-size:13px;font-weight:600;color:#8C7B5C;margin-bottom:4px">Inversión publicitaria</div>
+            <p style="font-size:14.5px;line-height:1.5;color:#5A5344;margin:0">Se abona desde el primer día directamente a Meta.</p>
+          </div>
+        </div>
+        <div data-reveal style="background:#211E17;color:#F8F4EC;border-radius:16px;padding:32px">
+          <div style="font-size:12.5px;font-weight:600;letter-spacing:0.1em;color:#8FB79A;text-transform:uppercase;margin-bottom:16px">Desde el segundo mes</div>
+          <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px"><span style="font-family:'Newsreader',serif;font-size:44px;line-height:1;color:#F8F4EC">USD 350</span><span style="font-size:15px;color:#B9B2A1">/ mes</span></div>
+          <p style="font-size:15px;line-height:1.55;color:#B9B2A1;margin:0 0 18px">Honorarios de Vamos Bien. Valores expresados sin IVA.</p>
+          <div style="border-top:1px solid #3A342A;padding-top:16px">
+            <div style="font-size:13px;font-weight:600;color:#8FB79A;margin-bottom:4px">Inversión publicitaria</div>
+            <p style="font-size:14.5px;line-height:1.5;color:#B9B2A1;margin:0">Continúa abonándose por separado directamente a Meta.</p>
+          </div>
+        </div>
+      </div>
+      <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:16px;padding:32px">
+        <h3 style="font-size:18px;font-weight:600;margin:0 0 20px">¿Qué incluyen los honorarios?</h3>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 20px">
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Diagnóstico estratégico</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Plan del Mes</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Gestión profesional de Meta Ads</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Seguimiento y optimización</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Análisis de datos</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Revisión de calidad de consultas</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Recomendaciones comerciales</div>
+          <div style="display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:#3A3529"><span style="color:#3C6B4F">✓</span>Comunicación y acompañamiento</div>
+        </div>
+        <p style="margin:22px 0 0;font-family:'Newsreader',serif;font-size:20px;line-height:1.4;color:#211E17">No pagás solamente por activar anuncios. Pagás por estrategia, ejecución, análisis y dirección.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S9 COMPROMISO -->
+  <section style="background:#EFE7D7;padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">COMPROMISO MUTUO</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0">Para crecer necesitamos trabajar en equipo</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div data-reveal style="background:#F5EEDF;border:1px solid #DDD0B8;border-radius:16px;padding:32px">
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 20px;color:#211E17">Lo que aportamos desde Vamos Bien</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Estrategia y Plan del Mes</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Gestión profesional de Meta Ads</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Seguimiento y optimización</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Análisis basado en datos</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Recomendaciones comerciales</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Comunicación clara</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Transparencia sobre lo que funciona y lo que no</li>
+          </ul>
+        </div>
+        <div data-reveal style="background:#F5EEDF;border:1px solid #DDD0B8;border-radius:16px;padding:32px">
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 20px;color:#211E17">Lo que necesitamos de tu negocio</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Presupuesto publicitario constante</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Accesos y materiales en tiempo</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Información real sobre ventas y consultas</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Capacidad para responder oportunidades</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Respeto por el foco definido</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Continuidad durante el proceso</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#3A3529"><span style="color:#3C6B4F">✓</span>Buena comunicación y predisposición para trabajar en equipo</li>
+          </ul>
+        </div>
+      </div>
+      <p data-reveal style="text-align:center;font-size:16.5px;line-height:1.6;color:#4A4437;margin:36px auto 0;max-width:680px">Nosotros asumimos la responsabilidad de ejecutar y mejorar. Vos asumís la responsabilidad de sostener y acompañar el proceso.</p>
+    </div>
+  </section>
+
+  <!-- S10 CALIFICACION -->
+  <section style="padding:96px 0">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 52px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">CALIFICACIÓN</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0">¿Es esta propuesta para tu negocio?</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div data-reveal style="background:#E9EFE8;border:1px solid #CBDBC7;border-radius:16px;padding:32px">
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 20px;color:#2C5540">Sí es para vos si…</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Ya tenés ventas regulares</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Tu producto o servicio ya fue validado</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Tenés presupuesto para invertir en publicidad</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Podés responder las consultas que generen las campañas</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Estás dispuesto a entregar información, accesos y materiales</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Valorás el orden, el foco y los procesos</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Podés comprometerte con un período inicial de seis meses</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#324A3A"><span style="color:#3C6B4F;font-weight:700">✓</span>Entendés que los resultados no son lineales ni inmediatos</li>
+          </ul>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:16px;padding:32px">
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 20px;color:#8C4A40">No es para vos si…</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Todavía no tenés ventas ni una propuesta validada</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Querés probar algunos días con muy poco presupuesto</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Esperás resultados garantizados o inmediatos</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Querés cambiar toda la estrategia cada semana</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>No tenés tiempo para responder consultas</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>No podés mantener activa la inversión publicitaria</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Condicionás el pago de honorarios a los resultados</li>
+            <li style="display:flex;gap:11px;font-size:15px;line-height:1.45;color:#6B6353"><span style="color:#B84A3E;font-weight:700">✕</span>Buscás una agencia que solamente obedezca pedidos</li>
+          </ul>
+        </div>
+      </div>
+      <p data-reveal style="text-align:center;font-family:'Newsreader',serif;font-size:24px;line-height:1.4;margin:40px auto 0;max-width:620px">No buscamos trabajar con todos. Buscamos trabajar con negocios a los que realmente podamos ayudar.</p>
+    </div>
+  </section>
+
+  <!-- S11 FAQ -->
+  <section style="background:#EFE7D7;padding:96px 0">
+    <div style="max-width:820px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;margin-bottom:44px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">PREGUNTAS FRECUENTES</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;margin:0">Lo que solés querer saber</h2>
+      </div>
+      <div data-reveal style="display:flex;flex-direction:column;gap:12px">
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle0 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿El primer mes es completamente gratis?<span style="{{ faqIcon0 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle0 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">Durante el primer mes están bonificados únicamente los honorarios de Vamos Bien. La inversión publicitaria se abona desde el primer día directamente a Meta.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle1 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Cuándo realizo el primer pago?<span style="{{ faqIcon1 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle1 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">Tu primer pago a Vamos Bien se realiza al comenzar el segundo mes. Desde ese momento, los honorarios son de USD 350 mensuales más IVA.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle2 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Por qué debo comprometerme durante seis meses?<span style="{{ faqIcon2 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle2 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">Porque el primer mes se utiliza para implementar, los siguientes para validar y luego comenzamos a consolidar aprendizajes y crecimiento. No sería profesional prometer que en algunos días se puede diagnosticar, probar, aprender y optimizar todo un sistema de captación.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle3 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Garantizan una cantidad determinada de ventas?<span style="{{ faqIcon3 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle3 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">No garantizamos una cifra específica de ventas. Los resultados también dependen del producto, precio, competencia, presupuesto, mercado y capacidad comercial del negocio. Sí nos comprometemos con un proceso profesional de diagnóstico, estrategia, implementación, seguimiento y optimización.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle4 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Qué sucede si ya trabajo con otra agencia?<span style="{{ faqIcon4 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle4 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">Si estás completamente conforme con su trabajo y sus resultados, no tiene sentido cambiar. Si sentís que existe margen para mejorar el foco, el orden, la estrategia o la calidad de las oportunidades, podemos mostrarte nuestra metodología.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle5 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿La inversión publicitaria está incluida en los USD 350?<span style="{{ faqIcon5 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle5 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">No. La inversión publicitaria se abona directamente a Meta y es independiente de nuestros honorarios.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle6 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Puedo trabajar solamente durante el primer mes bonificado?<span style="{{ faqIcon6 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle6 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">No. La bonificación corresponde al inicio de un proceso profesional de seis meses. No está planteada como una prueba aislada para utilizar el primer mes y retirarse.</div></div>
+        </div>
+
+        <div style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:12px;overflow:hidden">
+          <button onClick="{{ faqToggle7 }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;font-size:17px;font-weight:600;color:#211E17">¿Qué pasa si no entrego los accesos o materiales?<span style="{{ faqIcon7 }}flex:none;font-size:22px;font-weight:400;color:#3C6B4F;line-height:1">+</span></button>
+          <div style="{{ faqStyle7 }}"><div style="padding:0 24px;font-size:15.5px;line-height:1.6;color:#5A5344">Para acceder y mantener el beneficio, necesitamos que el negocio entregue la información, accesos y materiales acordados en los tiempos establecidos. El crecimiento requiere compromiso de ambas partes.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S12 COMO EMPEZAMOS + FORM -->
+  <section id="diagnostico" style="padding:96px 0 100px">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <div data-reveal style="text-align:center;max-width:640px;margin:0 auto 56px">
+        <div style="font-size:13px;font-weight:600;letter-spacing:0.14em;color:#3C6B4F;margin-bottom:14px">CÓMO EMPEZAMOS</div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.1;margin:0">Tres pasos para comenzar</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:64px">
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:28px">
+          <div style="width:34px;height:34px;border-radius:9px;background:#3C6B4F;color:#F8F4EC;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:16px">1</div>
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 8px">Completás el diagnóstico</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Respondés algunas preguntas para que podamos conocer tu situación, presupuesto y objetivos.</p>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:28px">
+          <div style="width:34px;height:34px;border-radius:9px;background:#3C6B4F;color:#F8F4EC;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:16px">2</div>
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 8px">Evaluamos compatibilidad</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Revisamos si tu negocio cumple con las condiciones y si consideramos que podemos ayudarte.</p>
+        </div>
+        <div data-reveal style="background:#FDFBF6;border:1px solid #E3D9C6;border-radius:14px;padding:28px">
+          <div style="width:34px;height:34px;border-radius:9px;background:#3C6B4F;color:#F8F4EC;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:16px">3</div>
+          <h3 style="font-size:18px;font-weight:600;margin:0 0 8px">Coordinamos una conversación</h3>
+          <p style="font-size:14.5px;line-height:1.55;color:#5A5344;margin:0">Una llamada breve para responder dudas, explicar el proceso y definir el próximo paso.</p>
+        </div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px;align-items:start;background:#211E17;border-radius:20px;padding:44px;color:#F8F4EC">
+        <div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:30px;line-height:1.15;margin:0 0 16px;color:#F8F4EC">Quiero saber si mi negocio califica</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:#B9B2A1;margin:0 0 24px">Dejanos los datos y evaluamos si podemos ayudarte. Si hay compatibilidad, comenzamos los primeros 30 días de implementación con honorarios bonificados.</p>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+            <li style="display:flex;gap:11px;font-size:14.5px;color:#D8D1C1"><span style="color:#8FB79A">✓</span>Sin pago de honorarios por adelantado</li>
+            <li style="display:flex;gap:11px;font-size:14.5px;color:#D8D1C1"><span style="color:#8FB79A">✓</span>Primer mes de honorarios bonificado</li>
+            <li style="display:flex;gap:11px;font-size:14.5px;color:#D8D1C1"><span style="color:#8FB79A">✓</span>Respuesta con diagnóstico de compatibilidad</li>
+          </ul>
+        </div>
+
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" style="background:#FDFBF6;border-radius:14px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <label style="grid-column:1 / -1;display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">Nombre y apellido</span>
+            <input value="{{ form.nombre }}" onInput="{{ onNombre }}" type="text" placeholder="Tu nombre" style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff" style-focus="border-color:#3C6B4F;outline:none">
+          </label>
+          <label style="display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">Negocio / rubro</span>
+            <input value="{{ form.negocio }}" onInput="{{ onNegocio }}" type="text" placeholder="Ej: tienda de deco" style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff" style-focus="border-color:#3C6B4F;outline:none">
+          </label>
+          <label style="display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">WhatsApp</span>
+            <input value="{{ form.whatsapp }}" onInput="{{ onWhatsapp }}" type="tel" placeholder="+54 ..." style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff" style-focus="border-color:#3C6B4F;outline:none">
+          </label>
+          <label style="display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">¿Ya tenés ventas regulares?</span>
+            <select value="{{ form.ventas }}" onChange="{{ onVentas }}" style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff" style-focus="border-color:#3C6B4F;outline:none">
+              <option value="">Seleccionar…</option>
+              <option value="si">Sí, ventas constantes</option>
+              <option value="algunas">Algunas, sin constancia</option>
+              <option value="no">Todavía no</option>
+            </select>
+          </label>
+          <label style="display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">Presupuesto mensual para Meta Ads</span>
+            <select value="{{ form.presupuesto }}" onChange="{{ onPresupuesto }}" style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff" style-focus="border-color:#3C6B4F;outline:none">
+              <option value="">Seleccionar…</option>
+              <option value="a">Menos de USD 300</option>
+              <option value="b">USD 300 – 800</option>
+              <option value="c">USD 800 – 2.000</option>
+              <option value="d">Más de USD 2.000</option>
+            </select>
+          </label>
+          <label style="grid-column:1 / -1;display:block">
+            <span style="display:block;font-size:12.5px;font-weight:600;color:#5A5344;margin-bottom:6px">¿Qué te gustaría lograr? (opcional)</span>
+            <textarea value="{{ form.objetivo }}" onInput="{{ onObjetivo }}" rows="3" placeholder="Contanos brevemente tu objetivo" style="width:100%;padding:12px 14px;border:1px solid #D9CEB9;border-radius:8px;font-size:15px;color:#211E17;background:#fff;resize:vertical;font-family:inherit" style-focus="border-color:#3C6B4F;outline:none"></textarea>
+          </label>
+          <button type="submit" style="grid-column:1 / -1;background:#3C6B4F;color:#F8F4EC;font-weight:600;font-size:16px;padding:15px;border:none;border-radius:8px;cursor:pointer" style-hover="background:#305840">Completar el diagnóstico</button>
+          <p style="grid-column:1 / -1;margin:0;font-size:12px;color:#8C7B5C;text-align:center">También podés hablar directamente con un asesor durante 15 minutos.</p>
+        </form>
+        </sc-if>
+
+        <sc-if value="{{ submitted }}">
+        <div style="background:#FDFBF6;border-radius:14px;padding:44px 32px;text-align:center;color:#211E17;display:flex;flex-direction:column;align-items:center;gap:14px">
+          <span style="width:56px;height:56px;border-radius:50%;background:#E9EFE8;color:#3C6B4F;display:flex;align-items:center;justify-content:center;font-size:26px">✓</span>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:26px;margin:0">¡Gracias, {{ form.nombre }}!</h3>
+          <p style="font-size:15px;line-height:1.6;color:#5A5344;margin:0;max-width:360px">Recibimos tu diagnóstico. Vamos a revisar la compatibilidad de tu negocio y te contactamos por WhatsApp para coordinar la conversación.</p>
+        </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#211E17;color:#F8F4EC;padding:72px 0 40px">
+    <div style="max-width:1120px;margin:0 auto;padding:0 32px">
+      <p style="font-family:'Newsreader',serif;font-size:30px;line-height:1.25;margin:0 0 8px;max-width:640px;color:#F8F4EC">Primero ponemos en marcha tu sistema de captación. Después empezás a pagar nuestros honorarios.</p>
+      <p style="font-size:15.5px;color:#B9B2A1;margin:0 0 40px">Buscamos trabajar con negocios que valoran hacer las cosas bien.</p>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid #3A342A;padding-top:28px">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="width:26px;height:26px;border-radius:7px;background:#3C6B4F;display:inline-flex;align-items:center;justify-content:center;color:#F8F4EC;font-weight:700;font-size:14px">V</span>
+            <span style="font-weight:700;letter-spacing:0.14em;font-size:14px">VAMOS BIEN</span>
+          </div>
+          <p style="font-size:13.5px;color:#8C8674;margin:0">Socios estratégicos en crecimiento digital.<br>No gestionamos campañas. Construimos crecimiento.</p>
+        </div>
+        <a href="#diagnostico" style="background:#F8F4EC;color:#211E17;font-weight:600;font-size:14.5px;padding:13px 22px;border-radius:8px" style-hover="background:#fff">Quiero saber si califico</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FIXED CTA -->
+  <a href="#diagnostico" style="position:fixed;bottom:24px;right:24px;z-index:60;background:#3C6B4F;color:#F8F4EC;font-weight:600;font-size:15px;padding:14px 22px;border-radius:100px;box-shadow:0 10px 30px rgba(33,30,23,0.28);display:flex;align-items:center;gap:9px" style-hover="background:#305840">
+    <span style="width:8px;height:8px;border-radius:50%;background:#8FB79A"></span>
+    Quiero saber si califico
+  </a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    open: -1,
+    submitted: false,
+    form: { nombre: '', negocio: '', whatsapp: '', ventas: '', presupuesto: '', objetivo: '' }
+  };
+
+  componentDidMount() {
+    const root = this.rootRef && this.rootRef.current;
+    if (!root) return;
+    const els = Array.from(root.querySelectorAll('[data-reveal]'));
+    const reveal = (el) => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    if (!('IntersectionObserver' in window)) { els.forEach(reveal); return; }
+    els.forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1)';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { reveal(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+    els.forEach((el) => io.observe(el));
+    // Fallbacks: reveal anything already in view immediately, and never leave content hidden.
+    const revealVisible = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      els.forEach((el) => {
+        if (el.style.opacity === '1') return;
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.95 && r.bottom > 0) { reveal(el); io.unobserve(el); }
+      });
+    };
+    requestAnimationFrame(revealVisible);
+    setTimeout(revealVisible, 300);
+    setTimeout(() => els.forEach(reveal), 2500);
+  }
+
+  setField(k, v) {
+    this.setState((s) => ({ form: { ...s.form, [k]: v } }));
+  }
+
+  renderVals() {
+    this.rootRef = this.rootRef || React.createRef();
+    const vals = {
+      rootRef: this.rootRef,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      form: this.state.form,
+      onNombre: (e) => this.setField('nombre', e.target.value),
+      onNegocio: (e) => this.setField('negocio', e.target.value),
+      onWhatsapp: (e) => this.setField('whatsapp', e.target.value),
+      onVentas: (e) => this.setField('ventas', e.target.value),
+      onPresupuesto: (e) => this.setField('presupuesto', e.target.value),
+      onObjetivo: (e) => this.setField('objetivo', e.target.value),
+      submit: (e) => { e.preventDefault(); this.setState({ submitted: true }); }
+    };
+    for (let i = 0; i < 8; i++) {
+      const isOpen = this.state.open === i;
+      vals['faqStyle' + i] = {
+        maxHeight: isOpen ? '360px' : '0px',
+        opacity: isOpen ? 1 : 0,
+        overflow: 'hidden',
+        paddingBottom: isOpen ? '22px' : '0px',
+        transition: 'max-height .45s ease, opacity .35s ease, padding-bottom .45s ease'
+      };
+      vals['faqIcon' + i] = {
+        display: 'inline-block',
+        transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
+        transition: 'transform .3s ease'
+      };
+      vals['faqToggle' + i] = () => this.setState((s) => ({ open: s.open === i ? -1 : i }));
+    }
+    return vals;
+  }
+}
+</script>
+</body>
+</html>

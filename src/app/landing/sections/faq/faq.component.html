@@ -1,0 +1,16 @@
+<section>
+  <div class="fq-inner">
+    <div data-reveal class="fq-header">
+      <div class="fq-eyebrow">PREGUNTAS FRECUENTES</div>
+      <h2 class="fq-title">Lo que solés querer saber</h2>
+    </div>
+    <div data-reveal class="fq-list">
+
+      <div *ngFor="let faq of faqs; let i = index" class="fq-item">
+        <button type="button" (click)="toggleFaq(i)" class="fq-question">{{ faq.pregunta }}<span class="faq-icon fq-icon-symbol" [class.open]="openFaq === i">+</span></button>
+        <div class="faq-panel" [class.open]="openFaq === i"><div class="fq-answer">{{ faq.respuesta }}</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,82 @@
+<header id="top">
+  <div class="hr-inner">
+    <div data-reveal>
+      <div class="hr-badge">
+        <span class="hr-badge-dot"></span>
+        Primeros 30 días de honorarios 100% bonificados
+      </div>
+      <h1 class="hr-title">
+        Primero ponemos en marcha tu sistema de captación y ventas para tu <span
+          class="hr-title-highlight">Mueblería</span>.<br><span class="hr-title-accent">Después</span> empezás a pagar
+        nuestros honorarios.</h1>
+      <p class="hr-subtitle">Durante
+        el primer mes
+        analizamos tu mueblería, definimos un foco comercial, creamos tu Plan del Mes, ponemos en marcha las campañas y
+        comenzamos a optimizar. No abonás honorarios por adelantado: tu primer pago se realiza recién al comenzar el
+        segundo mes.</p>
+      <div class="hr-ctas">
+        <a href="#diagnostico" class="btn-primary">Quiero saber si mi mueblería califica</a>
+        <a href="#diagnostico" class="btn-outline">Hablar con un asesor · 15 min</a>
+      </div>
+      <div class="hr-note">
+        <span class="hr-note-dot"></span>
+        <p class="hr-note-text">La inversión publicitaria
+          se abona desde el
+          primer día directamente a Meta. No es una prueba rápida ni una promesa mágica: es el comienzo de un proceso
+          profesional de crecimiento.</p>
+      </div>
+    </div>
+    <div data-reveal class="hr-media">
+      <div class="hr-carousel-wrap">
+        <button type="button" class="hr-arrow hr-arrow-prev" (click)="prevVideo()" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+
+        <div class="hr-track-viewport" #videoViewportRef>
+          <div class="hr-track" [style.transform]="'translateX(' + videoTrackOffset() + 'px)'">
+            <div *ngFor="let caso of casosVideo; let i = index" #videoCardRef class="hr-card"
+              [class.active]="i === activeVideoIndex()" (click)="toggleVideoPlay(i, $event)">
+              <video #casoVideoRef class="hr-video" muted loop playsinline preload="metadata" disablepictureinpicture>
+                <source [src]="caso.src" type="video/mp4">
+              </video>
+              <button type="button" class="hr-play-btn" [class.playing]="playingVideoIndex() === i"
+                (click)="toggleVideoPlay(i, $event)"
+                [attr.aria-label]="playingVideoIndex() === i ? 'Silenciar' : 'Activar audio'">
+                <svg *ngIf="playingVideoIndex() === i" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06A7 7 0 0 1 14 18.7v2.06A9 9 0 0 0 14 3.23z" />
+                </svg>
+                <svg *ngIf="playingVideoIndex() !== i" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45A4.5 4.5 0 0 0 16.5 12zM19 12c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.96 8.96 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06A7 7 0 0 1 19 12zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.17v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="hr-arrow hr-arrow-next" (click)="nextVideo()" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hr-dots">
+        <button *ngFor="let caso of casosVideo; let i = index" type="button" class="hr-dot"
+          [class.active]="i === activeVideoIndex()" (click)="goToVideo(i)"
+          [attr.aria-label]="'Ver caso ' + (i + 1)"></button>
+      </div>
+
+      <div class="hr-badge-float">
+        <div class="hr-badge-float-title">
+          GRATIS
+        </div>
+        <div class="hr-badge-float-sub">en honorarios durante los primeros
+          30 días</div>
+      </div>
+    </div>
+  </div>
+</header>

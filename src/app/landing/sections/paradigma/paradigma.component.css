@@ -1,0 +1,113 @@
+section {
+  background: var(--surface-light);
+  padding: clamp(48px, 10vw, 96px) 0;
+}
+
+.pd-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.pd-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 52px;
+}
+
+.pd-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--maroon);
+  margin-bottom: 14px;
+}
+
+.pd-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 6vw, 40px);
+  line-height: 1.12;
+  margin: 0;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.pd-card {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.pd-card-others {
+  background: rgba(var(--red-rgb), .06);
+  border: 1px solid rgba(var(--red-rgb), .18);
+}
+
+.pd-card-us {
+  background: var(--caramel);
+  border: 1px solid var(--caramel-dark);
+  color: var(--white);
+}
+
+.pd-card-label {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.pd-card-others .pd-card-label {
+  color: rgba(var(--black-rgb), .55);
+}
+
+.pd-card-us .pd-card-label {
+  color: rgba(var(--white-rgb), .75);
+}
+
+.pd-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pd-list-item {
+  display: flex;
+  gap: 12px;
+  font-size: 15.5px;
+  line-height: 1.45;
+}
+
+.pd-card-others .pd-list-item {
+  color: rgba(var(--black-rgb), .68);
+}
+
+.pd-card-us .pd-list-item {
+  color: var(--white);
+}
+
+.pd-list-mark-negative {
+  color: var(--red);
+}
+
+.pd-list-mark-positive {
+  color: var(--white);
+}
+
+.pd-closing {
+  font-family: 'Newsreader', serif;
+  font-size: clamp(20px, 4.5vw, 28px);
+  text-align: center;
+  margin: 52px 0 0;
+}
+
+.pd-closing-accent {
+  color: var(--caramel);
+}

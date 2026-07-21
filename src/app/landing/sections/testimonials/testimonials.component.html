@@ -1,0 +1,38 @@
+<section>
+  <div class="ts-inner">
+    <div data-reveal class="ts-header">
+      <h2 class="ts-title">Mueblerías que ya trabajan con foco</h2>
+      <span class="ts-subtitle">[ reseñas reales de Google ]</span>
+    </div>
+
+    <div data-reveal class="ts-carousel-wrap">
+      <button type="button" class="ts-arrow" (click)="prev()" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+
+      <div class="ts-viewport" #testimonioViewport (scroll)="onScroll()">
+        <div class="ts-track">
+          <div *ngFor="let t of testimonios; let i = index" #testimonioCard class="ts-card" data-reveal [style.transition-delay]="i * 90 + 'ms'">
+            <div class="ts-card-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <p class="ts-card-quote">"{{ t.quote }}"</p>
+            <div class="ts-card-author">
+              <img [src]="t.photo" referrerpolicy="no-referrer" [alt]="t.name" class="ts-card-photo" />
+              <div>
+                <div class="ts-card-name">{{ t.name }}</div>
+                <div class="ts-card-sub">{{ t.sub }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="ts-arrow" (click)="next()" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+      </button>
+    </div>
+
+    <div class="ts-dots">
+      <button *ngFor="let t of testimonios; let i = index" type="button" class="ts-dot" [class.active]="i === activeIndex()" (click)="goTo(i)" [attr.aria-label]="'Ver reseña ' + (i + 1)"></button>
+    </div>
+  </div>
+</section>

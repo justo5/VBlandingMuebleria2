@@ -1,0 +1,48 @@
+section {
+  background: var(--surface-dark);
+  padding: clamp(40px, 8vw, 72px) 0;
+}
+
+.ig-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 5vw, 32px);
+}
+
+.ig-card {
+  background: var(--black);
+  border-radius: 20px;
+  padding: clamp(32px, 6vw, 56px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.ig-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: clamp(24px, 5.5vw, 34px);
+  line-height: 1.2;
+  color: var(--white);
+  margin: 0;
+}
+
+.ig-text {
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: rgba(var(--white-rgb), .65);
+  margin: 0;
+  max-width: 460px;
+}

@@ -1,0 +1,19 @@
+@if (testMode) {
+  <div class="test-placeholder">
+    <p>🧪 Modo prueba — el formulario real está desactivado.</p>
+    <button type="button" class="test-btn" (click)="triggerTestSubmit()">Disparar tarjeta de gracias</button>
+  </div>
+} @else {
+  <div class="fillout-embed" data-fillout-id="oazWPzuWncus" data-fillout-embed-type="standard" data-fillout-inherit-parameters="" data-fillout-dynamic-resize=""></div>
+}
+
+@if (showThanks) {
+<div class="thanks-overlay" (click)="closeThanks()">
+  <div class="thanks-card" (click)="$event.stopPropagation()">
+    <button class="thanks-close" (click)="closeThanks()" aria-label="Cerrar">×</button>
+    <div class="thanks-icon">🎉</div>
+    <h3>¡Recibimos tu consulta!</h3>
+    <p>Un miembro del equipo de Vamos Bien va a revisar tu caso y te contactará por WhatsApp en menos de 24hs.</p>
+  </div>
+</div>
+}

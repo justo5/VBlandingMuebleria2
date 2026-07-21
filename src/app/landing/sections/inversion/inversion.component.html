@@ -1,0 +1,53 @@
+<section id="inversion">
+  <div class="iv-inner">
+    <div data-reveal class="iv-header">
+      <div class="iv-eyebrow">INVERSIÓN</div>
+      <h2 class="iv-title">Claridad total desde el primer día</h2>
+    </div>
+    <div class="iv-plans-row">
+      <div data-reveal class="iv-free-card">
+        <div class="iv-card-label">Primer mes</div>
+        <div class="iv-free-price">100% Gratis</div>
+        <p class="iv-free-text">Honorarios de Vamos Bien. No abonás honorarios por adelantado.</p>
+        <div class="iv-divider">
+          <div class="iv-divider-label">Inversión publicitaria</div>
+          <p class="iv-divider-text">Se abona desde el primer día directamente a Meta.</p>
+        </div>
+      </div>
+      <div data-reveal class="iv-plan-selector">
+        <button type="button" (click)="prev()" aria-label="Plan anterior" class="iv-nav-btn">‹</button>
+        <div class="iv-plan-card">
+          <div class="iv-plan-header">
+            <div class="iv-plan-name">Desde el segundo mes · Plan {{ activePlan.name }}</div>
+            <div *ngIf="activePlan.popular" class="iv-plan-popular">★ Más elegido</div>
+          </div>
+          <div class="iv-plan-tag">{{ activePlan.tag }}</div>
+          <div class="iv-plan-price-row"><span class="iv-plan-price">USD {{ activePlan.price }}</span><span
+              class="iv-plan-price-period">/ mes</span></div>
+          <p class="iv-plan-desc">{{ activePlan.desc }}</p>
+          <div class="iv-plan-divider">
+            <div class="iv-plan-divider-label">Inversión publicitaria</div>
+            <p class="iv-plan-divider-text">Continúa abonándose por separado directamente a Meta.</p>
+          </div>
+          <a href="#diagnostico" class="btn-primary-sm">Quiero este plan →</a>
+        </div>
+        <button type="button" (click)="next()" aria-label="Plan siguiente" class="iv-nav-btn">›</button>
+      </div>
+    </div>
+    <div *ngIf="activePlan.bonus" data-reveal class="iv-bonus">🎁 {{ activePlan.bonus }}</div>
+    <div data-reveal class="iv-dots">
+      <button *ngFor="let p of plans; let i = index" type="button" (click)="goTo(i)"
+        [attr.aria-label]="'Ver plan ' + p.name" class="iv-dot" [class.active]="i === activeIndex"></button>
+    </div>
+    <div data-reveal class="iv-includes">
+      <h3 class="iv-includes-title">¿Qué incluye el Plan {{ activePlan.name }}?</h3>
+      <div class="iv-includes-grid">
+        <div *ngFor="let item of activeIncludes" class="iv-includes-item" [class.excluded]="!item.included">
+          <span class="iv-includes-mark">{{ item.included ? '✓' : '✕' }}</span>{{ item.label }}
+        </div>
+      </div>
+      <p class="iv-includes-footer">No pagás solamente por activar anuncios. Pagás por estrategia, ejecución, análisis y
+        dirección.</p>
+    </div>
+  </div>
+</section>
