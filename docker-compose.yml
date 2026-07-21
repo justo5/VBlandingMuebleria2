@@ -9,4 +9,4 @@ services:
 networks:
   npm_network:
     external: true
-    name: CHANGE_ME_NPM_NETWORK_NAME
+    name: mi-red-nginx
