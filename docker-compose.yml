@@ -3,5 +3,10 @@ services:
     build: .
     container_name: vblanding
     restart: unless-stopped
-    ports:
-      - "8080:80"
+    networks:
+      - npm_network
+
+networks:
+  npm_network:
+    external: true
+    name: CHANGE_ME_NPM_NETWORK_NAME
