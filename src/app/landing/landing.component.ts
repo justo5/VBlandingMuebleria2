@@ -16,6 +16,7 @@ import { DiagnosticoComponent } from './sections/diagnostico/diagnostico.compone
 import { FooterComponent } from './sections/footer/footer.component';
 import { FixedCtaComponent } from './sections/fixed-cta/fixed-cta.component';
 import { InstagramComponent } from './sections/instagram/instagram.component';
+import { VideoEmaFranComponent } from './sections/video-ema-fran/video-ema-fran.component';
 
 @Component({
   selector: 'app-landing',
@@ -24,6 +25,7 @@ import { InstagramComponent } from './sections/instagram/instagram.component';
     NavComponent,
     HeroComponent,
     TestimonialsComponent,
+    VideoEmaFranComponent,
     ProblemaComponent,
     ParadigmaComponent,
     OfertaComponent,

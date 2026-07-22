@@ -1,0 +1,23 @@
+<section id="video-ema-fran">
+  <div class="vef-inner">
+    <div data-reveal class="vef-card">
+      <h2 class="vef-title">Mueblería EMA y FRAN</h2>
+      <p class="vef-text">Así es como acompañamos el crecimiento de EMA y FRAN.</p>
+      <div class="vef-video-wrap" (click)="togglePlay()">
+        <video #videoRef class="vef-video" playsinline preload="metadata" poster="resources/muebles/ema-y-fran-poster.jpg" (ended)="onVideoEnded()">
+          <source src="resources/muebles/ema-y-fran.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="vef-play-btn" [class.playing]="isPlaying()"
+          (click)="togglePlay($event)"
+          [attr.aria-label]="isPlaying() ? 'Pausar video' : 'Reproducir video'">
+          <svg *ngIf="!isPlaying()" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg *ngIf="isPlaying()" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+            <path d="M6 5h4v14H6zm8 0h4v14h-4z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
