@@ -3,8 +3,8 @@
     <div data-reveal class="vef-card">
       <h2 class="vef-title">Fundadores de Vamos Bien te explican cómo vender más</h2>
       <div class="vef-video-wrap" (click)="togglePlay()">
-        <video #videoRef class="vef-video" playsinline preload="metadata" poster="resources/muebles/ema-y-fran-poster.jpg" (ended)="onVideoEnded()">
-          <source src="resources/muebles/ema-y-fran.mp4" type="video/mp4">
+        <video #videoRef class="vef-video" playsinline preload="metadata" poster="resources/muebles/video-fundadores-poster.jpg" (ended)="onVideoEnded()">
+          <source src="resources/muebles/video-fundadores.mp4" type="video/mp4">
         </video>
         <button type="button" class="vef-play-btn" [class.playing]="isPlaying()"
           (click)="togglePlay($event)"
