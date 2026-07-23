@@ -21,12 +21,6 @@ export class TestimonialsComponent implements AfterViewInit {
 
   testimonios: Testimonio[] = [
     {
-      quote: 'Gracias a Vamos Bien, nuestra clínica creció muchísimo en pacientes y logró consolidarse en Punta del Este.',
-      name: 'Bless Estética',
-      sub: 'Estética · Punta del Este',
-      photo: 'https://lh3.googleusercontent.com/a-/ALV-UjUhiSd4ylKAjU4xlvmtI5oHtRgwYpl9OwQNejq-wooqVG7l7-4F=s96-c0x00000000-cc-rp-mo'
-    },
-    {
       quote: 'Son excelentes y mi asesor personal siempre está dispuesto a resolver y decirme qué es lo mejor para mi negocio.',
       name: 'Alejandro Bessero',
       sub: 'Automecánica Beljua',
@@ -51,12 +45,6 @@ export class TestimonialsComponent implements AfterViewInit {
       photo: 'https://lh3.googleusercontent.com/a-/ALV-UjXKzh3tmtOs8QM3uXSHEolH603_STUZOFilatd6d7Xcc8bVQbc=s96-c0x00000000-cc-rp-mo'
     },
     {
-      quote: 'Equipo muy profesional y comprometido. Contratamos el servicio hace 3 meses y estamos muy conformes.',
-      name: 'Actividades Acuáticas',
-      sub: 'Turismo náutico',
-      photo: 'https://lh3.googleusercontent.com/a-/ALV-UjXPWD-kxaQQMkgj-DZHoiD_qxqBmFX_SYW-NsRwMVCZXaJSduA=s96-c0x00000000-cc-rp-mo'
-    },
-    {
       quote: 'Empecé a vender más. Son atentos y muy humanos. Lo mejor. Vamos para adelante.',
       name: 'Maxi Minali',
       sub: 'Cliente Google',
@@ -67,6 +55,36 @@ export class TestimonialsComponent implements AfterViewInit {
       name: 'Euge Soria',
       sub: 'Cliente Google',
       photo: 'https://lh3.googleusercontent.com/a/ACg8ocKl0u0vspdvnFy6yv0MmZvIsBoyul_YyjII8mThxLr6heV__A=s96-c0x00000000-cc-rp-mo-ba2'
+    },
+    {
+      quote: 'Excelente atención y comunicación. Realmente excelente trabajo de todo el equipo. Recomendable 100%.',
+      name: 'Diego Valdez',
+      sub: 'Cliente Google',
+      photo: 'https://lh3.googleusercontent.com/a-/ALV-UjUfdemeE4ZVuMNxNPFLbyPSXWEV44hg-vZYRVzoi5t-UkbwGlFQ=s96-c0x00000000-cc-rp-mo'
+    },
+    {
+      quote: 'Excelente trabajo, con mucha dedicación y atención en cada detalle. Te llevan el emprendimiento a otro nivel. ¡Los súper recomiendo!',
+      name: 'Gonzalo Quiroz',
+      sub: 'Cliente Google',
+      photo: 'https://lh3.googleusercontent.com/a/ACg8ocKQi_3bQV3yNag_q-IzkPO1kJftFeJrBRpzEW8WGdigxI9-uQ=s96-c0x00000000-cc-rp-mo'
+    },
+    {
+      quote: 'Queremos agradecer a todo el equipo de Vamos Bien: su compromiso y profesionalismo marcaron una gran diferencia en nuestra marca. Estamos muy contentos, los resultados son excelentes.',
+      name: 'Lucía Lasala',
+      sub: 'Cliente Google',
+      photo: 'https://lh3.googleusercontent.com/a/ACg8ocIdgn9tICxoQMPFrkxMqws0HvHbMfjx8cThjFpTxB3BZwd6SQ=s96-c0x00000000-cc-rp-mo'
+    },
+    {
+      quote: 'Súper recomendable, excelente actitud y disposición. La atención fue excelente, recomiendo que los contraten.',
+      name: 'Adriana',
+      sub: 'Cliente Google',
+      photo: 'https://lh3.googleusercontent.com/a/ACg8ocK5o_jU67z17fE91fK-TYLhrZz2dIp7J9NQ7pWEtx0NwxCs4vU=s96-c0x00000000-cc-rp-mo-ba4'
+    },
+    {
+      quote: 'Soy cliente hace ya 3 años. El compromiso, la visión y las ganas de hacer crecer a sus clientes es lo que los mueve. Trabajamos codo a codo y me han ayudado a crecer muchísimo.',
+      name: 'Lucas Maciel',
+      sub: 'Mobility.ok',
+      photo: 'https://lh3.googleusercontent.com/a-/ALV-UjVsfwQYVkjbHRTPrls6LdRgq65areIZJx5rm2qPzwU-PbkzL7ZO3Q=s96-c0x00000000-cc-rp-mo-ba3'
     }
   ];
 
